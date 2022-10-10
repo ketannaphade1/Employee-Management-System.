@@ -1,0 +1,64 @@
+<html>
+    <nav class="navbar navbar-dark bg-primary" >
+
+        <h2>Employee List</h2>
+      </nav>
+
+    
+<br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Employee Id</th>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th> Email Id</th>
+            <!-- <th> Permanent Address</th> -->
+            <!-- <th> Experience in Years</th> -->
+            <th> Mobile Number</th>
+            <!-- <th> Emergency Contact</th> -->
+            <th> Current Role</th>
+            <th> Key Skill-1</th>
+            <th> Key Skill-2</th>
+            <!-- <th> Key Skill-3</th> -->
+            <!-- <th> Key Skill-4</th> -->
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.emailId}}</td>
+            <!-- <td>{{employee.pAddress}}</td> -->
+            <!-- <td>{{employee.yearsOfExp}}</td> -->
+            <td>{{employee.mobNumber}}</td>
+            <!-- <td>{{employee.emergencyContact}}</td> -->
+            <td>{{employee.currentRole}}</td>
+            <td>{{employee.keyskill1}}</td>
+            <td>{{employee.keyskill2}}</td>
+            <!-- <td>{{employee.keyskill3}}</td> -->
+            <!-- <td>{{employee.keyskill4}}</td> -->
+
+        </tr>
+
+    </tbody>
+</table>
+
+<!-- <footer class="footer">
+    <div class="container">
+<span>
+
+    All Rights Reserved 2004 @Yash Technology
+</span>
+
+    </div>
+
+
+</footer> -->
+
+
+</html>

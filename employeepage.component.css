@@ -1,0 +1,23 @@
+input{
+
+    border: 5px solid rgb(16, 161, 240);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    
+    }
+    
+
+     button{
+      color: rgb(235, 10, 10);
+      background-color: rgb(43, 226, 116);
+      font-family: Georgia;
+       width: 150px;
+      
+     }
+
+     h2{
+      font-family: Georgia;
+        color: white;
+     
+      }

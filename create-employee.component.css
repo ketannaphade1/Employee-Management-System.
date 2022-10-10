@@ -1,0 +1,27 @@
+label{
+    font-weight: bold;
+  font-size: 15px;
+  color: rgb(0, 187, 255);
+}
+h3{
+    font-weight: bold;
+    
+      text-align: center;
+    font-size: 30px;
+    color: rgb(11, 232, 125);
+}
+input{
+  border: 2px solid rgb(4, 1, 1);
+  border-radius: 2px;
+}
+
+textarea{
+  border: 2px solid rgb(4, 1, 1);
+  border-radius: 2px;
+}
+
+ /* body{
+
+  background-color: rgb(232, 11, 99);
+color: rgb(163, 235, 20);
+}  */

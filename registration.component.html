@@ -1,0 +1,190 @@
+<section class="vh-100">
+    <nav class="navbar navbar-dark bg-primary">
+    
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <h2>Welcome To Yash Technology New Employee Registration Form</h2>
+            </ul>
+    
+           
+    </nav>
+
+    
+<h3></h3>
+
+<body>
+    <div>
+        <div class="column">
+            <form action="/action_page.php">
+
+                <br>
+                <label for="firstName">First Name : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.firstName" name="firstName" placeholder="Enter FirstName"
+                    id="firstName"><br>
+                
+                <label for="middleName">Middle Name : </label><br>
+                <input type="text" class="form-control"  [(ngModel)]="emp.middleName" name="middleName" placeholder="Enter MiddleName"
+                    id="middleName"><br>
+                
+                <label for="lastName">Last Name : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.lastName" name="lastName" placeholder="Enter LastName"
+                    id="lastName"><br>
+                
+                <label for="pAddress">PermenentAddress : </label><br>
+                <textarea type="text" class="form-control2" [(ngModel)]="emp.pAddress" name="pAddress" placeholder="Enter Permenent Address"
+                   id="pAddress"></textarea>
+                    
+                <br>
+                <br>
+
+                <label for="corresponsenceAddress">CorrespondenceAddress : </label><br>
+                <textarea type="text" class="form-control2" [(ngModel)]="emp.corresponsenceAddress" name="corresponsenceAddress"
+                    placeholder="Enter Correspondence Address" id="correspondenceAddress"></textarea>
+                <br>
+
+
+            </form>
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <br>
+
+                <label for="education" >Education of Employee:</label><br>
+
+                <select class="form-control" name="education" id="education">
+                    <option value="BE">BE</option>
+                    <option value="BSC">BSC</option>
+                    <option value="MSC">MSC</option>
+                    <option value="MCM">MCM</option>
+                    <option value="BCA">BCA</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+                <br>
+                <input type="text " class="form-control" placeholder="Mention Other Education" >
+                <br>
+
+                <label for="yearsOfExp">Years Of Experience : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.yearsOfExp" name="yearsOfExp"
+                    placeholder="Enter Years Of Experinece" id="yearsOfExp"><br>
+             
+            
+                    <label for="mobNumber">Mobile Number : </label><br>
+                <input type="number" class="form-control" placeholder="Set Your MobileNumber" 
+              
+               
+                name="mobNumber"
+                [(ngModel)]="emp.mobNumber" required pattern="\d{10}" #mobNumber="ngModel" [class.is.invalid]="mobNumber.invalid && mobNumber.touched">
+                <small class="text-danger " [class.d-none]="mobNumber.valid || mobNumber.untouched">Mobile Number is Invalid/Invalid Entry</small>
+
+                <br>
+                <label for="lastorg">Last Organisation : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.lastorg" name="lastorg" placeholder="Previous Organisation"
+                    id="lastorg"><br>
+                <br>
+                <label for="secondlastorg">Last to Last Organisation : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.secondlastorg" name="secondlastorg"
+                    placeholder="Previous Organisation" id="secondlastorg"><br>
+                
+                <label for="currentCtc">Current CTC : </label><br>
+                <input type="number" class="form-control" [(ngModel)]="emp.currentCtc" name="currentCtc" placeholder="CTC of Employee"
+                    id="currentCtc"><br>
+                <br>
+
+
+
+
+
+            </form>
+        </div>
+
+        <div class="column">
+            <form action="/action_page.php">
+                <br>
+                <label for="currentRole">Current Role : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.currentRole" name="currentRole" placeholder="Enter Current Role"
+                    id="currentRole"><br>
+                <br>
+                <label for="keyskill">Key Skills : </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.keyskill1" name="keyskill1" placeholder="Key Skill-1"
+                    id="keyskill1">
+                <input type="text" class="form-control" [(ngModel)]="emp.keyskill2" name="keyskill2" placeholder="Key Skill-2"
+                    id="keyskill2">
+                <input type="text" class="form-control" [(ngModel)]="emp.keyskill3" name="keyskill3" placeholder="Key Skill-3"
+                    id="keyskill3">
+                <input type="text" class="form-control" [(ngModel)]="emp.keyskill4" name="keyskill4" placeholder="Key Skill-4"
+                    id="keyskill4"><br>
+                <br>
+
+
+                <label for="emergencyContact">Emergency Contact Number: </label><br>
+                <input type="text" class="form-control" [(ngModel)]="emp.emergencyContact" name="emergencyContact"
+                    placeholder="Set Your Emergency Contact" id="emergencyContact">
+                <br>
+                <br>
+
+                <label for="email">Enter Your EmailId : </label><br>
+                <input type="email" class="form-control" placeholder="Set Your EmailId" name="email"
+                [(ngModel)]="emp.emailId" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" #email="ngModel" [class.is.invalid]="email.invalid && email.touched">
+                <small class="text-danger " [class.d-none]="email.valid || email.untouched">Email Id is required Field/Invalid Entry</small>
+
+                <br>
+                <label for="password">Enter Your Password : </label><br>
+                <input type="password" class="form-control" placeholder="Set Your Password" name="password"
+                [(ngModel)]="emp.password" required #password="ngModel" [class.is.invalid]="password.invalid && password.touched">
+                <small class="text-danger " [class.d-none]="password.valid || password.untouched">Password is required Field</small>
+
+
+
+
+
+            </form>
+        </div>
+
+        <div class="column">
+           
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+           
+
+            <form action="/action_page.php">
+
+                <button (click)="registerEmployee()" type="button" class="btn btn-primary btn-block">Register Employee Profile</button>
+
+    
+
+            </form>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
